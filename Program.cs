@@ -1,35 +1,40 @@
 ﻿
-double a1 ,a2, a3, a4, a5, a6, a7, a8, a9, a10;
+using System.Reflection.Metadata;
+Console.Clear();
+double a1 ,a2, a3;
 
-Console.Write("digite dez numeros : ");
+Console.Write("digite um numero com até 2 casa decimais: ");
 a1 = Convert.ToDouble(Console.ReadLine())!;
+Console.Write("digite outro numero com até 2 casa decimais: ");
 a2 = Convert.ToDouble(Console.ReadLine())!;
+Console.Write("digite outro numero com até 2 casa decimais: ");
 a3 = Convert.ToDouble(Console.ReadLine())!;
-a4 = Convert.ToDouble(Console.ReadLine())!;
-a5 = Convert.ToDouble(Console.ReadLine())!;
-a6 = Convert.ToDouble(Console.ReadLine())!;
-a7 = Convert.ToDouble(Console.ReadLine())!;
-a8 = Convert.ToDouble(Console.ReadLine())!;
-a9 = Convert.ToDouble(Console.ReadLine())!;
-a10 = Convert.ToDouble(Console.ReadLine())!;
 
-if ()
+
+Console.WriteLine("Denominando maior dos 3...");
+Thread.Sleep(1000);
+Thread.Sleep(1000);
+if (a1>a2 && a1>a3)
 { 
-
-    Console.WriteLine("");
-
-
+    Console.WriteLine($"o número maior dos tres é : {a1}");
 
 
 }
-else
-{
+else if(a2>a3 && a2>a1)
+    {
+        Console.WriteLine($"o número maior dos tres é : {a2}");
 
 
 
+    }
 
-    
-}
+else if (a3 > a1 && a3 > a2)
+  {
+    Console.WriteLine($"o número maior dos tres é : {a3}");
+
+  }
+
+
 
 
 
